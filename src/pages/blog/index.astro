@@ -35,9 +35,7 @@ function formatDate(dateStr: string) {
         <h1>Recursos de Estudio</h1>
 
         <p class="intro-text">
-            En esta sección recopilo mis apuntes, resúmenes, laboratorios y recursos de estudio relacionados con la ciberseguridad. 
-            Aquí documento mi proceso de aprendizaje, incluyendo temas como Linux, redes, scripting, pentesting, análisis de vulnerabilidades, 
-            herramientas de seguridad y plataformas de entrenamiento. Este espacio funciona como una base de conocimiento personal en constante crecimiento,
+             Este espacio funciona como una base de conocimiento personal en constante crecimiento,
              donde organizo y comparto los conocimientos adquiridos a lo largo de mi formación.
         </p>
 
@@ -85,7 +83,7 @@ function formatDate(dateStr: string) {
             const selected = btn.dataset.tag!;
             cards.forEach(card => {
                 const tags: string[] = JSON.parse(card.dataset.tags ?? '[]');
-                card.style.display = (selected === 'all' || tags.includes(selected)) ? '' : 'none';
+                card.style.display = (selected === 'Todo' || tags.includes(selected)) ? '' : 'none';
             });
         });
     });
