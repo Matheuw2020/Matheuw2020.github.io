@@ -17,12 +17,27 @@ Mis áreas de interés incluyen:
 
 Actualmente continúo fortaleciendo mis conocimientos técnicos mediante el estudio diario, la resolución de laboratorios y el desarrollo de proyectos personales orientados a la seguridad informática. Mi objetivo es construir una base sólida que me permita contribuir profesionalmente al ecosistema de ciberseguridad en Latinoamérica y participar en iniciativas que promuevan el aprendizaje, la investigación y el uso responsable de la tecnología.
 
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import { SITE_DATA } from '../constants';
+import portraitImage from '../assets/portrait.png';
+import '../styles/about.css';
+---
 
+<Layout pageTitle="Sobre Mi">
+    <div class="page-container">
 
+        <h1>Sobre mí</h1>
 
+        <div class="about-content">
 
-<Image 
+            <div class="about-intro-wrapper centered-column">
+
+                <div class="about-header centered-column">
+                    <Image 
                         src={portraitImage} 
                         alt={SITE_DATA.name} 
                         class="about-portrait" 
                     />
+                    <h2 class="about-name">{SITE_DATA.name}</h2>
