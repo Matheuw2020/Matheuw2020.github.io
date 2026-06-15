@@ -1,51 +1,55 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import '../styles/blog.css';
-
-const { frontmatter } = Astro.props;
+import { SITE_DATA } from '../constants';
+import portraitImage from '../assets/portrait.png';
+import '../styles/about.css';
 ---
 
-<Layout pageTitle={frontmatter.title}>
+<Layout pageTitle="Sobre Mi">
     <div class="page-container">
 
-        <div class="post-header">
-            <a href={`${import.meta.env.BASE_URL}blog/`} class="back-link">← Blog</a>
+        <h1>Sobre mí</h1>
 
-            <h1 class="post-title">{frontmatter.title}</h1>
+        <div class="about-content">
 
-            <div class="post-meta">
+            <div class="about-intro-wrapper centered-column">
 
-                <!-- 🔥 INPUT EN LUGAR DE FECHA -->
-                <input
-                    type="text"
-                    class="post-input"
-                    placeholder="Escribe una nota o etiqueta..."
-                />
+                <div class="about-header centered-column">
+                    <h3>Estudiante de Ciberseguridad</h3>
+                </div>
 
-                {frontmatter.tags && (
-                    <div class="post-tags">
-                        {frontmatter.tags.map((tag: string) => (
-                            <span class="tag">{tag}</span>
-                        ))}
+                <div class="intro-text">
+
+                    <p>
+                        Soy estudiante de ciberseguridad con un fuerte interés en la administración de sistemas Linux,
+                        redes, automatización y seguridad ofensiva. Mi enfoque principal se centra en el aprendizaje
+                        práctico mediante laboratorios, desafíos técnicos y la construcción de proyectos personales
+                        que me permiten desarrollar una comprensión sólida de los fundamentos de la seguridad informática.
+                    </p>
+
+                    <p>
+                        A lo largo de mi formación he trabajado con distribuciones Linux, scripting en Bash y herramientas
+                        utilizadas habitualmente en entornos de análisis y evaluación de seguridad. Considero que la mejor
+                        forma de aprender es mediante la práctica constante, por lo que dedico parte de mi tiempo al estudio
+                        de plataformas de entrenamiento, resolución de retos técnicos y documentación de conocimientos adquiridos.
+                    </p>
                     </div>
-                )}
 
+                    <h3>Áreas de interés</h3>
+                    </div>
+
+                    <ul class="skills-list">
+                        <li>Sistemas Linux y administración básica.</li>
+                        <li>Redes y protocolos de comunicación.</li>
+                        <li>Bash Scripting y automatización de tareas.</li>
+                        <li>Seguridad ofensiva y pruebas de penetración.</li>
+                        <li>Enumeración y análisis de servicios.</li>
+                        <li>Metodologías de aprendizaje práctico en ciberseguridad.</li>
+                    </ul>
             </div>
 
-            {frontmatter.description && (
-                <p class="post-description">{frontmatter.description}</p>
-            )}
-        </div>
-
-        <article class="post-body">
-            <slot />
-        </article>
-
-        <div class="post-footer">
-            <a href={`${import.meta.env.BASE_URL}blog/`} class="back-link">
-                ← Back to all posts
-            </a>
         </div>
 
     </div>
-</Layout>
+</Layout>  
