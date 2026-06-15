@@ -4,11 +4,7 @@ import '../styles/blog.css';
 
 const { frontmatter } = Astro.props;
 
-const dateStr = new Date(frontmatter.date).toLocaleDateString('en-GB', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-});
+const dateStr = frontmatter.date;
 ---
 
 <Layout pageTitle={frontmatter.title}>
