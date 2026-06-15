@@ -20,14 +20,6 @@ const sorted: Post[] = Object.entries(postFiles)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 const allTags = [...new Set(sorted.flatMap(p => p.tags ?? []))].sort();
-
-function formatDate(dateStr: string) {
-    return new Date(dateStr).toLocaleDateString('en-GB', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-    });
-}
 ---
 
 <Layout pageTitle="Recursos de Estudio">

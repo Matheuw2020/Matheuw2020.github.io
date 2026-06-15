@@ -2,7 +2,7 @@
 layout: '../../layouts/BlogPost.astro'
 title: 'Navegacion y Gestion'
 description: 'Comandos de linux utilizados para el manejo de ficheros y directorios'
-date: '2025-05-15'
+date: 'COMANDOS'
 tags: ['linux', 'comandos', 'navegacion', 'gestion']
 ---
 
