@@ -83,7 +83,7 @@ function formatDate(dateStr: string) {
             const selected = btn.dataset.tag!;
             cards.forEach(card => {
                 const tags: string[] = JSON.parse(card.dataset.tags ?? '[]');
-                card.style.display = (selected === 'Todo' || tags.includes(selected)) ? '' : 'none';
+                card.style.display = (selected === 'all' || tags.includes(selected)) ? '' : 'none';
             });
         });
     });
