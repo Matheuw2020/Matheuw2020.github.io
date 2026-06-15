@@ -16,3 +16,13 @@ Mis áreas de interés incluyen:
 - __Metodologías de aprendizaje práctico en ciberseguridad.__
 
 Actualmente continúo fortaleciendo mis conocimientos técnicos mediante el estudio diario, la resolución de laboratorios y el desarrollo de proyectos personales orientados a la seguridad informática. Mi objetivo es construir una base sólida que me permita contribuir profesionalmente al ecosistema de ciberseguridad en Latinoamérica y participar en iniciativas que promuevan el aprendizaje, la investigación y el uso responsable de la tecnología.
+
+
+
+
+
+<Image 
+                        src={portraitImage} 
+                        alt={SITE_DATA.name} 
+                        class="about-portrait" 
+                    />
