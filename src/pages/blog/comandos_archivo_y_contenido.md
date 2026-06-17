@@ -2,7 +2,7 @@
 layout: '../../layouts/BlogPost.astro'
 title: 'Archivos y Contenido'
 description: 'Comandos de linux utilizados para el uso de ficheros y filtrado del contendido'
-date: '2026-06-15'
+date: '2026-06-16'
 tags: ['linux', 'comandos', 'archivos', 'contenido']
 ---
 
